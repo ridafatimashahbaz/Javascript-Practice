@@ -1,0 +1,18 @@
+const massMark=78;
+const heightMark=1.69;
+
+const massJohn=92;
+const heightJohn=1.76;
+
+const BMIMark=massMark/(heightMark*heightMark);
+const BMIJohn=massJohn/(heightJohn*heightJohn);
+
+const markHigherBMI=BMIMark>BMIJohn;
+
+let result;
+if(markHigherBMI){
+    result="Mark's BMI "+ BMIMark+" is higher than John's "+BMIJohn+"!";
+}else{
+    result="John's BMI "+ BMIJohn +" is higher than Mark's " +BMIMark+"!";
+}
+console.log(result);
